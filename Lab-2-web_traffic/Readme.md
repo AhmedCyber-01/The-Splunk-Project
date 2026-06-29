@@ -251,7 +251,7 @@ The completed dashboard contains the following visualizations:
 
 # Screenshot
 
-![image 8](images/image-7.png)
+![alt text](images/image07.png)
 
 ---
 
