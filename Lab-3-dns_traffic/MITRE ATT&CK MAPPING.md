@@ -1,3 +1,4 @@
+
 # MITRE ATT&CK Mapping
 
 This project analyzes **Zeek DNS logs** to identify suspicious DNS activity, detect potential malware communication, and monitor network behavior. DNS is commonly abused by adversaries for command-and-control (C2), domain generation algorithms (DGA), phishing, reconnaissance, and DNS tunneling. The following MITRE ATT&CK techniques are relevant to the detections implemented in this project.
@@ -252,3 +253,5 @@ Time-based visualizations enable analysts to quickly identify unusual increases 
 # SOC Analyst Notes
 
 These detections demonstrate how DNS logs can be leveraged to identify common attacker behaviors, including command-and-control communication, malware beaconing, DNS tunneling, Domain Generation Algorithm (DGA) activity, and suspicious DNS resolutions. In a production SOC environment, these SPL searches can be converted into scheduled correlation searches or real-time alerts. Detection accuracy can be further improved by enriching DNS events with threat intelligence feeds, newly registered domain (NRD) lookups, passive DNS data, and endpoint telemetry to provide additional context during investigations.
+
+---
