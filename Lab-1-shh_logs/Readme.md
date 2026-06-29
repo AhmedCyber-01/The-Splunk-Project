@@ -46,7 +46,7 @@ The dataset was indexed under the **ssh_logs** index using the **_json** sourcet
 
 ### Screenshot
 
-![Image](<Import ssh_logs.png>)
+![Image](<images/Import.png>)
 
 ---
 
@@ -64,7 +64,7 @@ This query validates that Splunk successfully indexed the dataset and categorize
 
 ### Screenshot
 
-![Image](image.png)
+![Image](images/image.png)
 
 ---
 
@@ -87,7 +87,7 @@ Repeated failed authentication attempts originating from a single IP address may
 ### Screenshot
 
 > Failed Login Analysis
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ---
 
@@ -107,7 +107,7 @@ A large number of authentication failures within a short period is a common indi
 ### Screenshot
 
 > Multiple Failed Authentication Attempts
-![alt text](image-2.png)
+![alt text](imagesimage-2.png)
 
 ---
 
@@ -128,7 +128,7 @@ Successful logins following several failed attempts may indicate compromised cre
 ### Screenshot
 
 > Successful Login Analysis
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ---
 
@@ -140,7 +140,7 @@ Not every SSH connection results in successful authentication. The following sea
 source="ssh_logs_new.json" host="webserver" sourcetype="_json" index="main"  event_type="Connection Without Authentication"
 | stats count by id.orig_h
 ```
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 To visualize authentication trends over time, the following query was used.
 
@@ -156,7 +156,7 @@ Repeated SSH connections without authentication can indicate reconnaissance acti
 ### Screenshot
 
 > Unauthenticated SSH Connections
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ---
 
@@ -166,17 +166,16 @@ Repeated SSH connections without authentication can indicate reconnaissance acti
 
 The following visualizations can be created using the collected SSH authentication data:
 
-* Failed Login Attempts by Source IP
-* Successful Logins by Source IP
-* Authentication Events by Type
+* Total SSH Evets
+* Successful Logins 
+* Failed Login Attempts 
+* Connection without Authentication
+* Failed SSH logs
 * Multiple Failed Authentication Attempts
-* SSH Activity Timeline
-* Top Destination Hosts
-
 ### Screenshot
 
 > SSH Security Dashboard
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 ---
 
